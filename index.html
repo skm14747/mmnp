@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <link href="static/style.css" rel="stylesheet">
-  <title>2048</title>
+  <title>Memory and Maths</title>
 </head>
+
 <body>
-  <h1>2048</h1>
-  <p id="score"></p>
-  <div id="size-bloc">
-    <p id="size-title">Size : </p>
-    <input id="size" type="number" value="4">
-    <input id="change-size" type="button" value="Ok">
-    <div class="clear"></div>
+  <div class='main-container'>
+
+
+    <div class="level-container">
+
+      <input class="three" id="three" type="button" value="3X3">
+      <input class="five" id="five" type="button" value="5X5">
+      <input class="seven" id="seven" type="button" value="7X7">
+    </div>
+    <h1 class="top-label">Sum of all rows and Colums should be <span id="score"> </span></h1>
+
+    <div id="size-bloc">
+
+    </div>
+    <div id="canvas-block">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <script src="static/script.js"></script>
   </div>
-  <div id="canvas-block">
-    <canvas id="canvas" width="500" height="500"></canvas>
-  </div>
-  <script src="static/script.js"></script>
 </body>
+
 </html>
